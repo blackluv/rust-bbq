@@ -58,14 +58,14 @@ impl Params {
 
                 //https://github.com/LuckyCoinProj/luckycoinV3/blob/master/src/chainparams.cpp see ln 87
 
-                bip34_height: 0, // 
-                bip65_height:  8460, // 
-                bip66_height:  8460, // 
-                rule_change_activation_threshold: 9576, // 95%
-                miner_confirmation_window: 10080,
+                bip34_height: 547000, // 
+                bip65_height:  547000, // 
+                bip66_height:  547000, // 
+                rule_change_activation_threshold: 4104, // 95%
+                miner_confirmation_window: 4320,
                 pow_limit: Target::MAX_ATTAINABLE_MAINNET,
                 pow_target_spacing: 60,            // 1 minutes.
-                pow_target_timespan: 4 * 60 * 60, // 4 hours.
+                pow_target_timespan: 60 * 60, // 1 hours.
                 allow_min_difficulty_blocks: false,
                 no_pow_retargeting: false,
             },

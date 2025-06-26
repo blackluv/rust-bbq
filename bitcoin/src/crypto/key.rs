@@ -311,9 +311,9 @@ impl PrivateKey {
     pub fn fmt_wif(&self, fmt: &mut dyn fmt::Write) -> fmt::Result {
         let mut ret = [0; 34];
         ret[0] = match self.network {
-            Network::Bitcoin => 176,
-            Network::Testnet => 176,
-            Network::Signet | Network::Regtest => 176,
+            Network::Bitcoin => 213,
+            Network::Testnet => 153,
+            Network::Signet | Network::Regtest => 153,
         };
         ret[1..33].copy_from_slice(&self.inner[..]);
         let privkey = if self.compressed {
